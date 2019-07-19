@@ -6,25 +6,25 @@ válidos durante a leitura (0 a 10) para cada nota.*/
 #include "Protheus.ch"
 #define p char(13)+char(10)
 
-user function exst1()
-local nNota := val(FWInputbox("Insira a nota de sua primeira Avaliação"))
-local nNota2 := val(FWInputbox("Insira a nota de sua Segunda Avaliação"))
+user function exs1()
+local nNota := -1
+local nNota2 := -1
 local nMedia 
 
 
 
  While nNota <0 .or. nNota >10
-    nNota := val(FWInputbox("Insira a nota de sua primeira avaliçao novamente"))
+    nNota := val(FWInputbox("Insira a nota de sua primeira avaliçao "))
  
     
 EndDo
 
  while nNota2 <0 .or. nNota2 >10
-    nNota2 := val(FWInputbox("Insira a Nota da segunda avaliçao novamente "))
+    nNota2 := val(FWInputbox("Insira a Nota da segunda avaliçao  "))
 
 endDo
 
-nMedia := (nNota+nNota2)/2
+nMedia := (nNota + nNota2) /2
 
 alert("Media : " + cvaltochar(nMedia))
 
