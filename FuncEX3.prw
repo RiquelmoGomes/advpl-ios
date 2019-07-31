@@ -6,21 +6,15 @@
 
 user function ex3Fun ()
 local aVetor :={}
-local nX := 1
 local nRes 
 aadd(aVetor,"Eu")
-aadd(aVetor,"voce")
-aadd(aVetor,"e")
-aadd(aVetor,"o")
-aadd(aVetor,"zoboo")
-aadd(aVetor,"mafu")
+aadd(aVetor,"Voce")
+aadd(aVetor,"E")
+aadd(aVetor,"O")
+aadd(aVetor,"Zoboo")
+aadd(aVetor,"Mafu")
 
-//  For nX := 1 to Len(aVetor)
-//     // For nI := 1 to Len(aVetor)
-//     // aVetor[nX,nI]:= u_rotev(aVetor[nX,nI])
-//     // Next
-     
-//  Next
+
 
 nRes := u_rotev(aVetor)
 
@@ -33,7 +27,6 @@ return
 
 
 user function rotev(aVetor)
-local nRet := 0
 local cMensagem :=''
 
 ASORT(aVetor,,,  {|x, y| x > y } )
