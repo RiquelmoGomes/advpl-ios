@@ -1,6 +1,3 @@
-/*Criar um array de 3 linhas e 2 colunas, cada linha deve guardar o nome de um aluno
-e a idade do mesmo. Exiba os dados do segundo aluno.*/
-
 #include "Protheus.ch"
 
 user function exarray()

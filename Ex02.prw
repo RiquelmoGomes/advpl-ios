@@ -23,8 +23,6 @@ msginfo("Aprovado  " + cValToChar(nMedia))
    msginfo("A Média das Provas é " + cValToChar(nMedia))
 
 
-While ()
-    
-End
+
 
    return

@@ -23,7 +23,7 @@ local oCheck
 DEFINE MSDIALOG oDlg TITLE cTitulo FROM 000,000 TO 600,800 PIXEL
 
 
-oFont := TFont():New(' new',,-18,.T.)
+oFont := TFont():New('courier new',,-18,.T.)
  
 
 @ 10,10 SAY oSay PROMPT 'Nome:' SIZE 200,20 COLORS CLR_RED,CLR_WHITE FONT oFont OF oDlg PIXEL
@@ -34,12 +34,12 @@ oFont := TFont():New(' new',,-18,.T.)
 @ 50,50 GET oGet VAR cIdade FONT oFont SIZE 50,20 OF oDlg PIXEL 
 @ 80,50 GET oGet VAR cSen FONT oFont SIZE 50,20 OF oDlg PIXEL VALID !empty(cSen)
 
-@ 80,100 BUTTON "OK" FONT oFont SIZE 080, 047  PIXEL OF oDlg ACTION u_Botao2(oDlg,cSen,cNome)
+@ 80,100 BUTTON "OK" FONT oFont SIZE 080, 047  PIXEL OF oDlg ACTION u_Botao1(oDlg,cSen,cNome)
 
 
     
 
-@ 150,120 BUTTON "Fechar" FONT oFont SIZE 080, 047  PIXEL OF oDlg ACTION u_Botao1(oDlg,cNome,cSen)
+//@ 150,120 BUTTON "Fechar" FONT oFont SIZE 080, 047  PIXEL OF oDlg ACTION u_Botao1(oDlg,cNome,cSen)
 
 ACTIVATE MSDIALOG oDlg CENTERED
 
@@ -64,16 +64,16 @@ oDlg:End()
 
 
 Return
-User Function Botao2(cSen)
-If ALLTRIM(UPPER(cSen))== 'IOS2019'
-            msgalert('Senha valida')
+// User Function Botao2(cSen)
+// If ALLTRIM(UPPER(cSen))== 'IOS2019'
+//             msgalert('Senha valida')
 
-    Else
+//     Else
 
-     msgalert('Senha Invalida')
+//      msgalert('Senha Invalida')
 
-    EndIf
+//     EndIf
 
-msgalert(cSen)
+// msgalert(cSen)
 
-Return
+// Return
